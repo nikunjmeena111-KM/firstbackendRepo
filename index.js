@@ -12,6 +12,10 @@ app.get('/twitter',(req,res)=>{
     res.send('we are studying the backend fronm chai aur code')
 })
 
+app.get('/facebook',(req,res)=>{
+    res.send('we are studying the backend fronm chai aur code')
+})
+
 app.get('/instagram',(req,res)=>{
     res.send('<h1>bhag bsdk!, padhle kal paper hai</h1>')
 })// yaha pe "/" ka use karna imp hai is ebhul nahi sakte hai 
