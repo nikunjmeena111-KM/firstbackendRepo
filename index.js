@@ -4,6 +4,13 @@ const express = require('express')
 const app = express()
 const port = 5000 // this is port no just like we have usb , type C etc ports, we also have virtual ports in computer more than 65000 ports so using this variable with any number between 0 and 65000 we are using any one of that virtual port
 
+dataApi={
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
+}
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })// get is type of reqest 
