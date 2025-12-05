@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const port = 5000 // this is port no just like we have usb , type C etc ports, we also have virtual ports in computer more than 65000 ports so using this variable with any number between 0 and 65000 we are using any one of that virtual port
 
-dataApi={
+ const dataApi={
   "userId": 1,
   "id": 1,
   "title": "delectus aut autem",
@@ -26,6 +26,12 @@ app.get('/facebook',(req,res)=>{
 app.get('/instagram',(req,res)=>{
     res.send('<h1>bhag bsdk!, padhle kal paper hai</h1>')
 })// yaha pe "/" ka use karna imp hai is ebhul nahi sakte hai 
+
+app.get('/apidata',(req,res)=>{
+  res.json(dataApi);
+ 
+
+})
 
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
